@@ -13,6 +13,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/routes")
+@CrossOrigin(origins = "*")
 @RequiredArgsConstructor
 public class RouteController {
 

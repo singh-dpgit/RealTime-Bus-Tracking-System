@@ -14,5 +14,6 @@ public interface BusRepository extends JpaRepository<Bus,Long> {
     boolean existsByBusNumber(String busNumber);                     // register: bus number duplicate toh nahi
     boolean existsByRegistrationNumber(String registrationNumber);   // register: registration duplicate toh nahi
     List<Bus> findByBusStatus(BusStatus status);                        // admin: PENDING wali buses ki list
-    List<Bus> findByRegisteredBy(User user);                          // driver: "meri buses"
+    List<Bus> findByRegisteredBy(User user);
+    
 }
